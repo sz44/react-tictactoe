@@ -1,0 +1,111 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+.game {
+  display: flex;
+  
+}
+
+.board {
+  width: 120px;
+  text-align: left;
+}
+
+ol {
+  padding-left: unset;
+}
+
+li {
+  list-style-type: none;
+}
+
+.history {
+ margin-left:20px;
+ height: 500px;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+.board button {
+  border-radius: 2px;
+  border: 1px solid black;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #746666;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  width: 34px;
+  height: 34px;
+  text-align: center;
+  float:left;
+}
+
+.square {
+
+}
+
+.win-square button{
+  border-width: 2px;
+  border-color: aquamarine;
+}
+
+.board button:hover {
+  border-color: #646cff;
+}
+
+.unselected-btn {
+  background-color: #343232;
+}
+
+.buttonSelected {
+  background-color: #343232;
+}
+
+
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
